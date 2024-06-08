@@ -1,10 +1,10 @@
-import React from 'react'
+import { useState } from 'react'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Home from './componets/Home'
 import TodoApp from './componets/todo'
 import Navbar from './componets/Navbar'
 
-const App = () => {
+function App() {
   const router = createBrowserRouter([
     {
       path:"/todo",
