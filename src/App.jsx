@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import {createHashRouter,RouterProvider} from 'react-router-dom'
 import Home from './componets/Home'
 import TodoApp from './componets/todo'
 import Navbar from './componets/Navbar'
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path:"/todo",
       element:<><Navbar/> <TodoApp/></>
